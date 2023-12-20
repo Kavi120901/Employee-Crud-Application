@@ -68,9 +68,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-image: url('q.jpg'); background-size: cover; width: 100vw; height: 100vh;">
     <div class="container my-5">
-        <h2>Edit Client</h2>
+        <h2 style="color: pink">Edit Client</h2>
 
         <?php
         if (!empty($errorMessage)) {
@@ -97,35 +97,35 @@ if ($_SERVER['REQUEST_METHOD'] == 'GET') {
         <form method="post">
             <input type="hidden" name="id" value="<?php echo $id; ?>">
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Name</label>
+                <label class="col-sm-3 col-form-label" style="color: white">Name</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="name" value="<?php echo $name; ?>"><br>
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Email</label>
+                <label class="col-sm-3 col-form-label" style="color: white">Email</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="email" value="<?php echo $email; ?>"><br>
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Phone</label>
+                <label class="col-sm-3 col-form-label" style="color: white">Phone</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="phone" value="<?php echo $phone; ?>"><br>
                 </div>
             </div>
             <div class="row mb-3">
-                <label class="col-sm-3 col-form-label">Address</label>
+                <label class="col-sm-3 col-form-label" style="color: white">Address</label>
                 <div class="col-sm-6">
                     <input type="text" class="form-control" name="address" value="<?php echo $address; ?>"><br>
                 </div>
             </div>
             <div class="row mb-3">
                 <div class="offset-sm-3 col-sm-3 d-grid">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-dark">Commit</button>
                 </div>
                 <div class="col-sm-3 d-grid">
-                    <a class="btn btn-outline-primary" href="/crud/index.php" role="button">Cancel</a><br>
+                    <a class="btn btn-outline-warning" href="/crud/index.php" role="button">Back</a><br>
                 </div>
             </div>
         </form>
