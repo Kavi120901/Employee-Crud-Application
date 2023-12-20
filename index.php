@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
      
 </head>
-<body>
+<body style="background-image: url('k.jpg'); background-size: cover; width: 100vw; height: 100vh;">
     <div class="container ,my-5">
-        <h2>Manage Employees</h2>
-        <a class="btn btn-primary" href="/crud/create.php" role="button">Add New Employee</a>
+        <h2 style="color: white">Manage Employees</h2>
+        <a class="btn btn-info" href="/crud/create.php" role="button">Add New Employee</a>
         <br>
         <table class="table">
             <thead>
@@ -50,8 +50,8 @@
                     <td>$row[phone]</td>
                     <td>$row[address]</td>
                     <td>
-                     <a class='btn btn-primary' href='/crud/edit.php?id=$row[id]'>Edit</a>
-                     <a class='btn btn-danger btn-sm' href='/crud/delete.php?id=$row[id]'>Delete</a>
+                     <a class='btn btn-success' href='/crud/edit.php?id=$row[id]'>Edit</a>
+                     <a class='btn btn-warning btn-sm' href='/crud/delete.php?id=$row[id]'>Delete</a>
                    </td>
                </tr>
                 ";
@@ -64,6 +64,13 @@
   </div>
 </body>
 </html>
+
+
+
+
+
+
+
 
 
 
