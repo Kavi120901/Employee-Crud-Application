@@ -39,9 +39,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
+<body style="background-image: url('p.jpg'); background-size: cover; width: 100vw; height: 100vh;">
     <div class="container my-5">
-        <h2>Sign Up</h2>
+        <h2 style="color: pink">Sign Up</h2>
 
         <?php
         if (isset($errorMessage)) {
@@ -55,16 +55,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         <form method="post">
             <div class="mb-3">
-                <label class="form-label">Username</label>
+                <label class="form-label" style="color: white">Username</label>
                 <input type="text" class="form-control" name="username" required>
             </div>
             <div class="mb-3">
-                <label class="form-label">Password</label>
+                <label class="form-label" style="color: white">Password</label>
                 <input type="password" class="form-control" name="password" required>
             </div>
-            <button type="submit" class="btn btn-primary">Sign Up</button>
+            <button type="submit" class="btn btn-secondary">Sign Up</button>
         </form>
-        <p class="mt-3">Already have an account? <a href="login.php">Log in here</a>.</p>
+        <p class="mt-3" style="color: white">Already have an account? <a href="login.php">Log in here</a>.</p>
     </div>
 </body>
 </html>
+
